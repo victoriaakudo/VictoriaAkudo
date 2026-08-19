@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { getSiteConfig } from "@/lib/data";
@@ -47,6 +48,7 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <SmoothScroll>
+          <ScrollToTopOnNavigate />
           <Nav brand={site.brand} nav={site.nav} contact={site.contact} />
           <main className="flex-1">{children}</main>
           <Footer
