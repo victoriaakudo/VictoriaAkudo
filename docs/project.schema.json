@@ -1,0 +1,345 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://victoriaakudo.com/schemas/project.schema.json",
+  "title": "Project",
+  "description": "One case study. GET /projects/{slug} returns exactly this object; GET /projects returns an array of them. Validated against all 5 existing case studies. Apply validation at publish time, not on save, so drafts can be incomplete.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "title", "summary", "tags", "meta", "thumbnail", "accentColor", "order", "sections"],
+
+  "properties": {
+    "slug": {
+      "description": "Public URL segment: /case-studies/{slug}. Unique and stable — changing it breaks live links, so warn before allowing an edit.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "titleLead": {
+      "description": "Optional first line of the hero title, styled differently. e.g. \"SYCAMORE'S\" above \"DESIGN SYSTEM\".",
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "description": "Hero title. Uppercase by convention. Wraps if long — no length limit needed beyond sanity.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "summary": {
+      "description": "One-paragraph description under the hero title. Also used as the page meta description.",
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "description": "Category chips under the title, e.g. [\"FINTECH\", \"SYSTEM DESIGN\"].",
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "meta": {
+      "description": "The hero meta grid. All three keys are shown.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "timeline", "tools"],
+      "properties": {
+        "role": { "type": "string", "minLength": 1 },
+        "timeline": {
+          "description": "Free text, not dates. e.g. \"2024 — Continuously Growing\".",
+          "type": "string",
+          "minLength": 1
+        },
+        "tools": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "live": {
+      "description": "Optional \"View Live App\" button. Omit the whole object when there is nothing to link to.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "label"],
+      "properties": {
+        "url": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 }
+      }
+    },
+    "thumbnail": {
+      "description": "Card image on the home grid and the banner at the top of the case study.",
+      "$ref": "#/definitions/sizedImage"
+    },
+    "heroDevices": {
+      "description": "Optional device mockups in the hero. Currently rendered without intrinsic dimensions, so width/height are not required here.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/imageRef" }
+    },
+    "accentColor": {
+      "description": "Hero background tint. Text colour is derived from it in the frontend — do not store a text colour.",
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}$"
+    },
+    "order": {
+      "description": "Sort key for the home grid. Drag-to-reorder in the admin; do not make her type integers.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "nextProjectSlug": {
+      "description": "DEPRECATED — slug of the 'Next Project' card. Dangles when the target project is deleted. Prefer deriving 'next' from `order` and dropping this field.",
+      "type": ["string", "null"],
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sections": { "$ref": "#/definitions/sections" }
+  },
+
+  "definitions": {
+
+    "sections": {
+      "description": "Named sections, keyed by role — NOT an array. Key order is irrelevant: the frontend renders in its own fixed order (overview, problem, goals, process, design, collaboration, challenges, impact, reflection). A project omits any section it does not have.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["overview"],
+      "properties": {
+        "overview":      { "$ref": "#/definitions/section" },
+        "problem":       { "$ref": "#/definitions/section" },
+        "goals":         { "$ref": "#/definitions/section" },
+        "process":       { "$ref": "#/definitions/section" },
+        "design":        { "$ref": "#/definitions/section" },
+        "collaboration": { "$ref": "#/definitions/section" },
+        "challenges":    { "$ref": "#/definitions/section" },
+        "impact":        { "$ref": "#/definitions/section" },
+        "reflection":    { "$ref": "#/definitions/section" }
+      }
+    },
+
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["eyebrow", "blocks"],
+      "properties": {
+        "eyebrow": {
+          "description": "Small label above the section. NOT always the section key — the `design` section of one project is labelled \"SOLUTION BUILT\".",
+          "type": "string",
+          "minLength": 1
+        },
+        "heading": {
+          "description": "Optional larger heading. Supported by the frontend but unused by every current case study.",
+          "type": "string",
+          "minLength": 1
+        },
+        "blocks": {
+          "description": "The section's content, in display order. This is the array she reorders in the admin.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/block" }
+        }
+      }
+    },
+
+    "block": {
+      "description": "A discriminated union on `kind`. Nine variants. An unrecognised kind renders as nothing.",
+      "oneOf": [
+        { "$ref": "#/definitions/textBlock" },
+        { "$ref": "#/definitions/quoteBlock" },
+        { "$ref": "#/definitions/bulletsBlock" },
+        { "$ref": "#/definitions/imageBlock" },
+        { "$ref": "#/definitions/videoBlock" },
+        { "$ref": "#/definitions/audioBlock" },
+        { "$ref": "#/definitions/galleryBlock" },
+        { "$ref": "#/definitions/marqueeBlock" },
+        { "$ref": "#/definitions/metricsBlock" }
+      ]
+    },
+
+    "textBlock": {
+      "description": "Prose. `heading` is the ONE subsection-heading mechanism — do not add a second one anywhere else.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "paragraphs"],
+      "properties": {
+        "kind": { "const": "text" },
+        "heading": { "type": "string", "minLength": 1 },
+        "paragraphs": {
+          "description": "One string per paragraph. Inline **bold** markdown is parsed on render.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "quoteBlock": {
+      "description": "Pull-quote, rendered with a left accent border.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "text"],
+      "properties": {
+        "kind": { "const": "quote" },
+        "text": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "bulletsBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "items"],
+      "properties": {
+        "kind": { "const": "bullets" },
+        "heading": { "type": "string", "minLength": 1 },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "imageBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "image"],
+      "properties": {
+        "kind": { "const": "image" },
+        "image": { "$ref": "#/definitions/sizedImage" },
+        "width": {
+          "description": "LAYOUT hint — how wide the image sits on the page. Unrelated to image.width, which is intrinsic pixels.",
+          "enum": ["inset", "full", "bleed"]
+        }
+      }
+    },
+
+    "videoBlock": {
+      "description": "Self-hosted mp4. Autoplaying video must also be muted.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "src"],
+      "properties": {
+        "kind": { "const": "video" },
+        "src": { "type": "string", "minLength": 1 },
+        "poster": {
+          "description": "Still frame shown before playback. Strongly recommended.",
+          "type": "string",
+          "minLength": 1
+        },
+        "caption": { "type": "string", "minLength": 1 },
+        "loop": { "type": "boolean" },
+        "autoplay": { "type": "boolean" },
+        "muted": { "type": "boolean" }
+      }
+    },
+
+    "audioBlock": {
+      "description": "Audio clip. With no `src` the frontend renders a muted-speaker placeholder, which is how a section is parked while she waits on the file.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": { "const": "audio" },
+        "src": { "type": "string", "minLength": 1 },
+        "caption": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "galleryBlock": {
+      "description": "Grid of images with one shared caption underneath.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "images"],
+      "properties": {
+        "kind": { "const": "gallery" },
+        "images": {
+          "description": "May be empty — an empty gallery renders nothing, which is how a section is parked while she waits on assets.",
+          "type": "array",
+          "items": { "$ref": "#/definitions/sizedImage" }
+        },
+        "columns": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "caption": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "marqueeBlock": {
+      "description": "Horizontally auto-scrolling strip of screens.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "images"],
+      "properties": {
+        "kind": { "const": "marquee" },
+        "images": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/definitions/sizedImage" }
+        },
+        "pauseOnHover": { "type": "boolean" },
+        "caption": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "metricsBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "metrics"],
+      "properties": {
+        "kind": { "const": "metrics" },
+        "metrics": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["value", "label"],
+            "properties": {
+              "value": {
+                "description": "Display string, not a number — \"+$9.7M\", \"34%\", \"10x\".",
+                "type": "string",
+                "minLength": 1
+              },
+              "label": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+
+    "imageRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["src", "alt"],
+      "properties": {
+        "src": {
+          "description": "Absolute CDN URL, or a root-relative path while assets are local.",
+          "type": "string",
+          "minLength": 1
+        },
+        "alt": {
+          "description": "Required in the admin, not skippable.",
+          "type": "string",
+          "minLength": 1
+        },
+        "caption": {
+          "description": "Optional caption rendered under this specific image.",
+          "type": "string",
+          "minLength": 1
+        },
+        "width": {
+          "description": "INTRINSIC pixel width, recorded by the upload pipeline — never typed by hand.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "description": "INTRINSIC pixel height.",
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+
+    "sizedImage": {
+      "description": "An imageRef where intrinsic width and height are mandatory. Every rendered content image uses this: without real dimensions the page cannot reserve space, which causes layout shift and breaks scroll-triggered animation positions.",
+      "allOf": [
+        { "$ref": "#/definitions/imageRef" },
+        { "type": "object", "required": ["width", "height"] }
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "badges": ["4+ Years Experience", "Available Globally"],
+  "resumeFileUrl": "/files/victoria-akudo-resume.pdf",
+  "experience": [
+    {
+      "role": "Senior Product Designer",
+      "company": "Sycamore Finance",
+      "period": "Jan 2026 — Present",
+      "location": "Lagos, Nigeria (Hybrid)",
+      "summary": "Promoted to Senior for owning end-to-end redesigns that lifted retention 30% and onboarding conversion 20%."
+    },
+    {
+      "role": "Product Designer",
+      "company": "Sycamore Finance",
+      "period": "Sept 2022 — Dec 2025",
+      "location": "Lagos, Nigeria (Hybrid)",
+      "summary": "Led product design for the consumer-facing loan application, internal tools, and the company-wide design system. Worked cross-functionally with product, engineering, and data teams.",
+      "bullets": [
+        "Redesigned loan application flow — 34% drop-off reduction & 10x loan disbursement",
+        "Built 0→1 design system adopted by 3 product teams",
+        "Reduced design-to-dev handoff time by 54%"
+      ]
+    },
+    {
+      "role": "Product Designer",
+      "company": "Bedrock Residences",
+      "period": "Jun 2024 — Dec 2024",
+      "location": "Remote",
+      "summary": "Designed iOS + Android property management app connecting residents and facility managers; built a scalable style guide adopted across the product line."
+    },
+    {
+      "role": "Product Designer",
+      "company": "Garden Academy",
+      "period": "Dec 2021 — Aug 2022",
+      "location": "Remote",
+      "summary": "Led the research work stream (team of 5) — surveys, interviews, competitor analysis, personas, and journey maps — informing the platform's first product release."
+    },
+    {
+      "group": "Other Roles",
+      "role": "Product Designer",
+      "company": "Spondit & Language Planet",
+      "period": "Contracts",
+      "summary": "Designed a 'Smart Traffic Management System' aimed at providing an organized, integrated approach to minimizing congestion and improving safety in city streets through connected technology.\n\nAlso, designed a 'Language Learning Management Web Application' aimed at making language learning fun, interactive, & accessible while empowering language teachers with engaging tools."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Tools",
+      "skills": ["Figma", "Figjam", "Notion", "Coda", "Jira", "Maze", "Slack", "Claude", "Google Meet"]
+    },
+    {
+      "category": "Research",
+      "skills": ["User Interviews", "Usability Testing", "Heuristic Evaluation", "Journey Mapping", "A/B Testing", "Competitor Analysis"]
+    },
+    {
+      "category": "System",
+      "skills": ["Design Systems", "Style Guides", "Token Design", "Component Architecture"]
+    },
+    {
+      "category": "AI-Assisted Workflows",
+      "skills": ["Figma Make", "UX Pilot", "Claude"]
+    },
+    {
+      "category": "Soft Skills",
+      "skills": ["Product/Project Management", "Cross-functional Collaboration", "Stakeholder Alignment", "Workshop Facilitation"]
+    }
+  ]
+}

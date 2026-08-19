@@ -1,0 +1,1415 @@
+[
+  {
+    "slug": "sycamore-loan-redesign",
+    "titleLead": "SYCAMORE'S",
+    "title": "LOAN APPLICATION REDESIGN",
+    "summary": "Redesigning a fragmented, manual loan flow into a fully automated, end-to-end self-serve experience — improving trust, reducing drop-off, and tightening repayment security.",
+    "tags": [
+      "MOBILE APP",
+      "PRODUCT DESIGN",
+      "Prototyping"
+    ],
+    "meta": {
+      "role": "Lead Product Designer",
+      "timeline": "4 Weeks — Q4 2025",
+      "tools": [
+        "Figma",
+        "Miro",
+        "Coda",
+        "Microsoft Clarity"
+      ]
+    },
+    "live": {
+      "url": "#",
+      "label": "View Live App"
+    },
+    "thumbnail": {
+      "src": "/images/projects/loan-app/thumbnail.png",
+      "alt": "Sycamore loan application redesign screens",
+      "width": 4528,
+      "height": 2280
+    },
+    "heroDevices": [
+      {
+        "src": "/images/projects/loan-app/hero-1.png",
+        "alt": "Loan app dashboard"
+      },
+      {
+        "src": "/images/projects/loan-app/hero-2.png",
+        "alt": "Loan selection screen"
+      },
+      {
+        "src": "/images/projects/loan-app/hero-3.png",
+        "alt": "Eligible loan offer screen"
+      },
+      {
+        "src": "/images/projects/loan-app/hero-4.png",
+        "alt": "Loan disbursed confirmation"
+      }
+    ],
+    "accentColor": "#331B17",
+    "order": 1,
+    "sections": {
+      "overview": {
+        "eyebrow": "OVERVIEW",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Sycamore is a digital finance platform offering loans, savings, investments, and other financial services to users across Nigeria. The loan application flow was functional but deeply fragmented — users couldn't complete the journey fully within the app. After several steps, applications required manual follow-up from a Sycamore representative, creating friction and uncertainty for users while adding operational bottlenecks for the business. At the same time, weak repayment security was driving higher default risk and excess manual verification work."
+            ]
+          },
+          {
+            "kind": "video",
+            "src": "/images/projects/loan-app/walkthrough.mp4",
+            "poster": "/images/projects/loan-app/hero.png",
+            "caption": "Interactive prototype walkthrough",
+            "autoplay": true,
+            "loop": true,
+            "muted": true
+          }
+        ]
+      },
+      "problem": {
+        "eyebrow": "PROBLEM",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Users were dropping off at three critical points: the eligibility check, the document upload step, and the final review screen. Interviews revealed confusion around 'what happens next' and anxiety about whether they were eligible for the amount they were requesting. The existing design provided no progress indication, and offered no reassurance throughout."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Loan applications were not fully automated — they required human follow-up to complete",
+              "Multi-step identity verification was confusing and error-prone for users",
+              "No progress indicators — approval timelines felt unpredictable",
+              "Loan terms and repayment expectations were unclear, leading to anxiety and drop-off",
+              "Ops teams handled excessive manual follow-ups that could have been resolved in-app",
+              "Repayment security was weak, contributing to higher default risk"
+            ]
+          },
+          {
+            "kind": "gallery",
+            "columns": 2,
+            "images": [
+              {
+                "src": "/images/projects/loan-app/before.png",
+                "alt": "Previous loan application design",
+                "width": 4544,
+                "height": 4043
+              }
+            ]
+          }
+        ]
+      },
+      "goals": {
+        "eyebrow": "GOALS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The brief was both a UX and a systems challenge. Success meant delivering a better user experience and a more defensible business model — simultaneously."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Design a fully automated flow that requires little to no manual follow-ups",
+              "Decrease application completion time to 30 minutes from 15 minutes",
+              "Reduce loan approval time to 6 hours (from 3 days) for amounts under 30 million and 24 hours for those over",
+              "Cut defaults on repayments by 60%"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "PROCESS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "We ran a week's discovery sprint before touching any design files. This grounded every decision in observed behaviour rather than assumption."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Session replay analysis (Microsoft Clarity) to identify exact drop-off points",
+              "Support ticket review to understand users' confusion",
+              "6 contextual user tests & interviews",
+              "End-to-end journey mapping including internal ops steps, not just user actions",
+              "Competitive analysis: Cowrywise, Carbon, FairMoney, Kuda",
+              "Collaborated with product, engineering, & risk teams to redefine verification & approval logic",
+              "3 rounds of prototype testing after designs — before implementation"
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/loan-app/process-map.png",
+              "alt": "Loan application process mapping diagram",
+              "caption": "End-to-end process mapping",
+              "width": 4544,
+              "height": 1813
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "design": {
+        "eyebrow": "DESIGN",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Three decisions had the biggest structural impact on both the user experience and business outcomes."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Progressive disclosure — broke requirements into stages so users only saw what they needed at each step",
+              "Real-time eligibility checks surfaced early, so users knew their status before investing further effort",
+              "Automated bank mandate integrated directly into the flow to secure repayments upfront",
+              "Contextual tooltips added at high-error fields to reduce form abandonment"
+            ]
+          },
+          {
+            "kind": "gallery",
+            "columns": 2,
+            "images": [
+              {
+                "src": "/images/projects/loan-app/after.png",
+                "alt": "Redesigned loan application screen",
+                "width": 4544,
+                "height": 7671
+              },
+              {
+                "src": "/images/projects/loan-app/hero.png",
+                "alt": "Redesigned loan application screens",
+                "width": 4528,
+                "height": 1612
+              }
+            ]
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "IMPACT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "After shipping the redesign in September 2025, we tracked metrics over 8 weeks:"
+            ]
+          },
+          {
+            "kind": "metrics",
+            "metrics": [
+              {
+                "value": "+$9.7M",
+                "label": "Disbursed Loan Amount"
+              },
+              {
+                "value": "5 HRS",
+                "label": "Avg. Loan Approval Time"
+              },
+              {
+                "value": "-34%",
+                "label": "Drop-off Reduction"
+              },
+              {
+                "value": "+22%",
+                "label": "Repeat Applications"
+              },
+              {
+                "value": "+40.05%",
+                "label": "Feature Adoption Rate"
+              }
+            ]
+          }
+        ]
+      },
+      "reflection": {
+        "eyebrow": "REFLECTION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Fintech UX is fundamentally about trust, not just clarity. Every screen is a micro-negotiation between the user's financial anxiety and the product's reliability.",
+              "This project reinforced a principle I return to often: simplifying a flow doesn't always mean reducing rigour — it means designing it more intentionally. The bank mandate could easily have felt like friction, but framed correctly it became a trust signal. Complexity managed well becomes clarity for the user. I also learned to treat ops workflows as a design input, not an afterthought. The most impactful changes came from understanding where business processes broke down, not just where users did."
+            ]
+          }
+        ]
+      }
+    },
+    "nextProjectSlug": "sycamore-design-system"
+  },
+  {
+    "slug": "sycamore-design-system",
+    "titleLead": "SYCAMORE'S",
+    "title": "DESIGN SYSTEM",
+    "summary": "Building a unified design language from scratch to align product, engineering, and marketing — cutting iteration time by 40% and enabling consistent, trustworthy financial experiences at scale.",
+    "tags": [
+      "FINTECH",
+      "SYSTEM DESIGN",
+      "STYLE GUIDE"
+    ],
+    "meta": {
+      "role": "Product Designer",
+      "timeline": "2024 — Continuously Growing",
+      "tools": [
+        "Figma"
+      ]
+    },
+    "thumbnail": {
+      "src": "/images/projects/design-system/thumbnail.png",
+      "alt": "Sycamore design system color palette and components",
+      "width": 4528,
+      "height": 2280
+    },
+    "heroDevices": [
+      {
+        "src": "/images/projects/design-system/hero-1.png",
+        "alt": "Design system overview"
+      }
+    ],
+    "accentColor": "#331B17",
+    "order": 2,
+    "sections": {
+      "overview": {
+        "eyebrow": "OVERVIEW",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "As Sycamore scaled its digital financial products across web and mobile, design inconsistencies and duplicated effort began to slow delivery. The product experience also needed to align more closely with Sycamore's brand and marketing identity across touch points. A unified design system was needed — one that could support scale, consistency, and cross-team collaboration without becoming a documentation exercise that nobody used."
+            ]
+          }
+        ]
+      },
+      "problem": {
+        "eyebrow": "PROBLEM",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Design inconsistency was accumulating on every team. It showed up in delivery speed, engineering overhead, and user trust."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "UI patterns lacked consistency across product flows — the same interaction behaved differently in different contexts",
+              "Visual inconsistencies emerged between product and marketing surfaces, weakening brand coherence",
+              "Engineering spent excess time clarifying design intent during handoff",
+              "Scaling new features increased the risk of design drift across the product suite"
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/design-system/before.png",
+              "alt": "Fragmented UI before the design system",
+              "caption": "Before: inconsistent, fragmented UI across products",
+              "width": 4544,
+              "height": 5009
+            },
+            "width": "full"
+          },
+          {
+            "kind": "gallery",
+            "columns": 2,
+            "images": []
+          }
+        ]
+      },
+      "goals": {
+        "eyebrow": "GOALS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The system needed to serve multiple teams while remaining practical enough that it would actually be used in the day-to-day. Good documentation that nobody opens isn't a design system — it's a design archive."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Unify product and brand expression across all Sycamore digital products",
+              "Reduce design-to-engineering handoff time and clarification cycles",
+              "Create a system built for real workflows — not theoretical best practice",
+              "Enable consistent, trustworthy financial experiences as the product suite grows"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "PROCESS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The system was built collaboratively across product design, engineering, marketing, and brand teams. Brand foundations — colour, typography, visual tone — were aligned with Sycamore's existing identity. Product components were then built from the ground up to support real workflows. The focus throughout was on clarity, reusability, and immediate applicability."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Aligned colour, typography, and visual tone with Sycamore's existing brand identity",
+              "Built product components from scratch — grounded in actual UI patterns in production",
+              "Collaborated with engineering to ensure direct adoption through an internal component library",
+              "Defined clear variants and usage rules for every component",
+              "Kept documentation practical and tied to real examples — not abstract guidelines"
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/design-system/screenshot.png",
+              "alt": "The Sycamore design system",
+              "caption": "The unified component library and tokens",
+              "width": 4528,
+              "height": 2280
+            },
+            "width": "full"
+          }
+        ]
+      },
+      "design": {
+        "eyebrow": "SOLUTION BUILT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Three decisions had the biggest structural impact on both the user experience and business outcomes."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Foundation tokens: colour, typography, spacing, and elevation",
+              "Layout system and responsive grid patterns",
+              "Interactive components: buttons, input fields, modals, navigation, data display patterns",
+              "Components with full state coverage (default, focus, error, success, disabled)",
+              "Consistent adoption across all Sycamore web and mobile product surfaces"
+            ]
+          },
+          {
+            "kind": "video",
+            "src": "/images/projects/design-system/walkthrough.mp4",
+            "poster": "/images/projects/design-system/screenshot.png",
+            "caption": "Playing around with the design system",
+            "autoplay": true,
+            "loop": true,
+            "muted": true
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "IMPACT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The system became the foundation for ongoing product development and iteration across Sycamore's suite."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "40% reduction in design iteration time",
+              "Faster design-to-engineering handoff with fewer clarification cycles",
+              "Improved visual consistency across product and marketing surfaces",
+              "Stronger collaboration between design, engineering, and marketing teams"
+            ]
+          }
+        ]
+      },
+      "reflection": {
+        "eyebrow": "REFLECTION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "In fintech, consistency builds trust. Every button that behaves differently, every shade of blue that doesn't quite match — these register as subtle signals of unreliability to users managing their money. This system gave Sycamore the infrastructure to scale without that drift. The biggest lesson: build for adoption first. A design system that teams actually use daily is worth infinitely more than a comprehensive one that just lives in a Figma file."
+            ]
+          }
+        ]
+      }
+    },
+    "nextProjectSlug": "events-by-sycamore"
+  },
+  {
+    "slug": "events-by-sycamore",
+    "title": "EVENTS BY SYCAMORE",
+    "summary": "A four-sided event platform built on Sycamore's fintech rails — designed under a six-week timeline, powering 10 events and 2,000+ ticket buyers in its first four months.",
+    "tags": [
+      "EVENT MANAGEMENT",
+      "SAAS",
+      "WEBSITE DESIGN",
+      "WEB APP"
+    ],
+    "meta": {
+      "role": "Sole Product Designer",
+      "timeline": "6 Weeks — Q3 2023",
+      "tools": [
+        "Figma",
+        "Coda"
+      ]
+    },
+    "live": {
+      "url": "https://events.sycamore.ng",
+      "label": "View Live Site"
+    },
+    "thumbnail": {
+      "src": "/images/projects/events/thumbnail.png",
+      "alt": "Events by Sycamore orders dashboard",
+      "width": 4528,
+      "height": 2284
+    },
+    "heroDevices": [
+      {
+        "src": "/images/projects/events/hero-1.png",
+        "alt": "Events orders dashboard"
+      }
+    ],
+    "accentColor": "#F5F8DE",
+    "order": 3,
+    "sections": {
+      "overview": {
+        "eyebrow": "OVERVIEW",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Events by Sycamore is a vertical product that turned Sycamore's existing fintech infrastructure — KYC'd accounts, hosted wallets, instant payments — into a fully-featured event platform. It was built for four user types in one system: organizers, vendors, on-site staff, and attendees. I was the sole product designer, and the project shipped under a tight timeline driven by a partnership with Now Sounds, an entertainment company that needed a digital backbone for an upcoming series of events.",
+              "It also became a stealth user-acquisition channel for Sycamore's core fintech app — every ticket purchase created a fully-KYC'd Sycamore account."
+            ]
+          }
+        ]
+      },
+      "problem": {
+        "eyebrow": "THE OPPORTUNITY",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Now Sounds, an entertainment company, approached Sycamore to digitally power a series of their upcoming events. The brief was straightforward — build an event management infrastructure and integrate fintech capabilities into it. Sycamore already operated the rails this kind of product needed: KYC, hosted wallets and real-time payments."
+            ]
+          },
+          {
+            "kind": "quote",
+            "text": "The opportunity was to integrate our fintech capabilities directly into live events — turning each ticket sale, each vendor payout, and each on-site purchase into a touchpoint with Sycamore's financial ecosystem."
+          },
+          {
+            "kind": "text",
+            "paragraphs": [
+              "So, Events by Sycamore became two things: the event management platform Now Sounds needed, and a user-acquisition channel that brought new customers into Sycamore's ecosystem through events they were already attending."
+            ]
+          }
+        ]
+      },
+      "goals": {
+        "eyebrow": "GOALS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Three things had to be true for this to ship:"
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Each of the four user groups gets a tailored experience. No \"one dashboard with permissions\" shortcut — the jobs are too different.",
+              "Less fintech jargon for attendees. They're purchasing a ticket, not creating a fintech account, even if that's the underlying process.",
+              "Ship to a real event within six weeks. No room for traditional research timelines."
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "PROCESS",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "Research substitute: structured competitive teardown.",
+            "paragraphs": [
+              "Without time for primary user research, I ran a structured analysis of TIX Africa, Eventbrite, and Luma. I mapped each platform's flows for ticket purchase, attendee check-in, and organizer reporting — then identified where each broke down. Most of them don't reconcile payments well and also lack vendor management entirely. The gaps became our feature priorities. Given a longer timeline I'd have run interviews with event organizers — but given the constraint, these competitor analyses gave a defensible starting point and saved time."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Mapping the four-sided system.",
+            "paragraphs": [
+              "The key design challenge: each role needed its own surface, but they had to share a common transaction backbone. When an attendee buys a ticket, that single event has to ripple through the organizer's analytics, and the on-site staff's check-in queue — in real time. I sketched the system as a flow of state across roles before designing any screens."
+            ]
+          },
+          {
+            "kind": "gallery",
+            "columns": 2,
+            "caption": "Competitive Analysis & System Map",
+            "images": [
+              {
+                "src": "/images/projects/events/competitive-analysis.png",
+                "alt": "Competitive analysis of event platforms",
+                "caption": "Competitive Analysis",
+                "width": 2208,
+                "height": 1420
+              },
+              {
+                "src": "/images/projects/events/four-sided-system.png",
+                "alt": "The four-sided event ecosystem",
+                "caption": "Four-Sided System, One Backbone",
+                "width": 2208,
+                "height": 1420
+              }
+            ]
+          }
+        ]
+      },
+      "design": {
+        "eyebrow": "VISUAL JOURNEY & USER EXPERIENCE",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "Attendee experience: ticket purchase → wallet account",
+            "paragraphs": [
+              "The lowest-friction entry point. Attendees buy a ticket; behind the scenes, a fully-KYC'd Sycamore account is created using only what the ticket purchase already requires (name, phone, email). Once inside the wallet, they can fund their account, pay vendors at the event, and send money to friends — all without leaving the ticketing context."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/ui/ticket-purchase-onboarding.png",
+              "alt": "Ticket purchase and onboarding flow",
+              "caption": "Ticket Purchase + Onboarding",
+              "width": 4544,
+              "height": 2477
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/ui/wallet-flows.png",
+              "alt": "Attendee wallet flows",
+              "caption": "Wallet Flows",
+              "width": 4544,
+              "height": 6538
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "heading": "Vendor experience: payment dashboard with live analytics",
+            "paragraphs": [
+              "Vendors process transactions, view real-time sales, and withdraw to their bank — without third-party POS terminals. The dashboard intentionally surfaces the metrics vendors act on (today's revenue, top-selling items, payout status) and hides the rest."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/ui/vendors-payment-dashboard.png",
+              "alt": "Vendor payment dashboard",
+              "caption": "Vendors’ Payment Dashboard",
+              "width": 4544,
+              "height": 5204
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/ui/vendors-sales-analytics.png",
+              "alt": "Vendor sales analytics",
+              "caption": "Vendors’ Sales Analytics",
+              "width": 4544,
+              "height": 2477
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "heading": "Event staff: a stripped-down organizer view",
+            "paragraphs": [
+              "Staff get a permissioned subset of the organizer's interface — check-in, payment verification, walk-up order entry. The principle was simple: staff should be able to do their job and nothing else, with zero risk of touching financial data they shouldn't see."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/ui/event-staff-ui-shots.png",
+              "alt": "Event staff interface screens",
+              "caption": "Event Staff UI Shots",
+              "width": 4544,
+              "height": 6582
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "heading": "Organizer dashboard: full event command center",
+            "paragraphs": [
+              "Organizers get end-to-end oversight — ticket sales, vendor performance, attendee data, payout schedules. I deliberately separated operational data (sales, attendance) from sensitive data (attendee financial details, vendor payout accounts), so organizers can run a successful event without being exposed to information that violates user privacy."
+            ]
+          },
+          {
+            "kind": "marquee",
+            "pauseOnHover": true,
+            "images": [
+              {
+                "src": "/images/projects/events/scroll/attendee-list.png",
+                "alt": "Attendee list",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/awaiting-check-in.png",
+                "alt": "Awaiting check-in",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/confirm-and-checkin.png",
+                "alt": "Confirm and check-in",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/confirm-and-checkin-2.png",
+                "alt": "Confirm and check-in",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/edit-event.png",
+                "alt": "Edit event",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/name.png",
+                "alt": "Name entry",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/organisers-dashboard-overview.png",
+                "alt": "Organiser's dashboard overview",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/organisers-dashboard.png",
+                "alt": "Organiser's dashboard",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/register-attendee.png",
+                "alt": "Register attendee",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/register-payment.png",
+                "alt": "Register payment",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/vendor-list.png",
+                "alt": "Vendor list",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/vendor-reg.png",
+                "alt": "Vendor registration",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/events/scroll/wrap-1.png",
+                "alt": "Wrap",
+                "width": 4528,
+                "height": 2205
+              },
+              {
+                "src": "/images/projects/events/scroll/date.png",
+                "alt": "Date selection",
+                "width": 4272,
+                "height": 2775
+              }
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Acquisition surface: the landing page",
+            "paragraphs": [
+              "The flip side of the product is how organizers find it. The landing page at events.sycamore.ng was designed as a focused conversion surface for organizers — hero, value props, feature highlights, social proof, FAQs, and sign-up. It speaks specifically to event organizers and frames every other user group as a benefit they unlock for their own audience."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/events/landing-hero.png",
+              "alt": "Events by Sycamore landing page hero",
+              "caption": "Landing page__hero section",
+              "width": 4544,
+              "height": 3188
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "IMPACT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "After shipping the product, we tracked metrics over 3 months:"
+            ]
+          },
+          {
+            "kind": "metrics",
+            "metrics": [
+              {
+                "value": "10",
+                "label": "Events"
+              },
+              {
+                "value": "2,124",
+                "label": "Tickets Sold"
+              },
+              {
+                "value": "+2,000",
+                "label": "Sycamore Accounts Created"
+              }
+            ]
+          }
+        ]
+      },
+      "reflection": {
+        "eyebrow": "REFLECTION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "**What I'd push hardest on if I did this again:** build in time for organizer conversations, even just 3 or 4 30-minute calls. Competitor analysis got us most of the way there, but it told me what other platforms did, not what our organizers struggled with. At a longer timeline, I'd anchor decisions in primary research rather than reasoning from secondary signal.",
+              "**What I'd keep:** leaning hard on the existing Sycamore design system. Building a four-surface platform in six weeks is impossible without that leverage. It also meant the product felt like a Sycamore — which was strategically critical given the platform was as much about user acquisition as it was about ticketing.",
+              "**The bigger lesson:** in a product where the same transaction has to ripple through different interfaces, the design isn't really about the screens. It's about the data model and how each role sees a different facet of the same event. That perspective has shaped how I approach platform design ever since."
+            ]
+          }
+        ]
+      }
+    },
+    "nextProjectSlug": "quickly-word-game"
+  },
+  {
+    "slug": "quickly-word-game",
+    "title": "QUICKLY — A COMPETITIVE WORD GAME",
+    "summary": "A passion project turned Sycamore campaign tool — designing a fast-paced word game that drove 2,000+ plays and 100+ new users within 2 days of launch.",
+    "tags": [
+      "WEB GAME",
+      "INTERACTION DESIGN",
+      "GAMIFICATION"
+    ],
+    "meta": {
+      "role": "Product & Interaction Designer",
+      "timeline": "2 Weeks — Q2 2024",
+      "tools": [
+        "Figma"
+      ]
+    },
+    "live": {
+      "url": "https://sycamore.ng/quickly",
+      "label": "View Live Site"
+    },
+    "thumbnail": {
+      "src": "/images/projects/quickly/thumbnail.png",
+      "alt": "Quickly word game splash screen",
+      "width": 4528,
+      "height": 2280
+    },
+    "heroDevices": [
+      {
+        "src": "/images/projects/quickly/hero-1.png",
+        "alt": "Quickly game start screen"
+      }
+    ],
+    "accentColor": "#5C3111",
+    "order": 4,
+    "sections": {
+      "overview": {
+        "eyebrow": "OVERVIEW",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "I've always been a fan of mobile games - especially word puzzles and mind games. Designing one was something I had always wanted to do - so \"Quickly\" started as a personal passion project — a word game built with my colleague Daniel Anyaegbu, something to share with friends.",
+              "**The concept:** type the given words as fast as you can. Midway through development, Sycamore's CEO saw its potential and adopted it as the centerpiece of their 5th anniversary campaign. What began as something we made for fun became a brand awareness and user acquisition engine."
+            ]
+          }
+        ]
+      },
+      "problem": {
+        "eyebrow": "THE CONCEPT & INSPIRATION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Quickly is rooted in a simple yet engaging premise: Type the given words as fast as you can!",
+              "The competitive nature of the game was inspired by the high-score mechanics found in classic mobile games like Candy Crush and Subway Surf, while the word-based challenges drew inspiration from my favorite brain-sharpening games; Smartle and Wordle."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/competitive-analysis-1.png",
+              "alt": "Competitive analysis of Smartle, Wordle, Candy Crush and Subway Surf",
+              "caption": "Competitive Analysis",
+              "width": 4544,
+              "height": 4601
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "DESIGN DECISIONS: RESEARCH, FEATURES & ACCESSIBILITY",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "Timing System",
+            "paragraphs": [
+              "The game's timing system was a crucial part of its design. Through research and user testing with a small group of mobile game players (mostly friends and acquaintances), we explored two possible time systems: one with a fixed time for users to beat and another that lets players improve their time with unlimited attempts. After comparing both systems, the feedback leaned heavily toward the open-ended timing option. This made players feel less restricted, encouraging them to improve their scores and keep competing."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/competitive-analysis.png",
+              "alt": "Timing system result screen",
+              "caption": "Timing System",
+              "width": 4544,
+              "height": 2496
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "heading": "Leaderboard & Best Score",
+            "paragraphs": [
+              "The game features a leaderboard that tracks user scores, encouraging players to continue playing to improve their standing. I also added the Best Score feature, which allowed users to track their five best scores and see how they were improving, adding another layer of motivation."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/ui/leadboard.png",
+              "alt": "Leaderboard and best-score screens",
+              "caption": "Leaderboard & Best Score",
+              "width": 4544,
+              "height": 2476
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "heading": "Game Sound Effects",
+            "paragraphs": [
+              "Since it was a game, I wanted to ensure that the experience felt dynamic and exciting, so we integrated sound effects for key actions - starting the game, typing a correct word, making a mistake, and finishing a round. This created a sense of immersion while keeping the overall interface simple."
+            ]
+          },
+          {
+            "kind": "audio",
+            "caption": "Game sound effects"
+          },
+          {
+            "kind": "text",
+            "heading": "Accessibility & Fairness",
+            "paragraphs": [
+              "We opted for a web-based format rather than an app, ensuring the game was accessible via a simple link. However, we also ensured to keep things fair by restricting the game to mobile devices, as typing on laptops would have given some players an unfair advantage."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/ui/game-web.png",
+              "alt": "Desktop web-view fallback message",
+              "caption": "Web view",
+              "width": 4544,
+              "height": 3232
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "design": {
+        "eyebrow": "PIVOTING FOR SYCAMORE'S 5TH ANNIVERSARY CAMPAIGN",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Midway through development, the project took an exciting turn. The CEO of Sycamore - a Nigerian Fintech Company - saw the potential in \"Quickly\" and decided to use it as the central piece of their 5th anniversary campaign. The game's competitive nature aligned with their vision to engage users in a fun, memorable way while offering prizes for the top players on the leaderboard.",
+              "This pivot required some changes. I wanted the game to reflect Sycamore's brand, so I incorporated their green color scheme and made other visual adjustments - like a visual representation of growth using trees - to align with their mission and identity."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/ui/game-3.png",
+              "alt": "Game instructions and gameplay with Sycamore branding",
+              "caption": "Incorporating Sycamore Branding",
+              "width": 4544,
+              "height": 2476
+            },
+            "width": "bleed"
+          },
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Moreover, we needed to integrate the game into Sycamore's user system, so I adjusted the experience to force players to log in (or register if they aren't already) to their Sycamore account to enter the leaderboard and compete for the anniversary prizes. This integration served two purposes: it kept the game relevant to the company's campaign and drove user acquisition. Players could still enjoy the game casually without an account, but they had to log in to compete for the prizes."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/ui/game-4.png",
+              "alt": "Quickly landing and sign-in screens",
+              "caption": "Authentication",
+              "width": 4544,
+              "height": 2476
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "collaboration": {
+        "eyebrow": "COLLABORATION WITH ENGINEERING",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Collaboration with my colleague (handling the development side) was essential throughout the process. We worked closely to ensure that the design choices were feasible from an engineering standpoint. Every decision had to consider performance, especially given our focus on mobile devices.",
+              "For instance, when introducing sound effects, we ensured these wouldn’t overload the system or slow down gameplay. Likewise, when thinking about animations, we kept them minimal to avoid unnecessary delays or distractions."
+            ]
+          }
+        ]
+      },
+      "challenges": {
+        "eyebrow": "CHALLENGES & LESSONS LEARNED",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The game was widely received, attracting over 2,000 plays and 100 new users in 2 days. However, we quickly discovered that some users attempted to game the system by hacking into the leaderboard. While we hadn’t anticipated this level of competitive behavior, we identified the culprits and removed them from the leaderboard, maintaining the game’s integrity.",
+              "This experience highlighted the importance of security in game design, a factor we are now focusing on as we develop Quickly 2.0. The new version will include additional security measures, as well as exciting features like a multiplayer mode, new word categories, and potentially even visual puzzles to diversify gameplay."
+            ]
+          },
+          {
+            "kind": "image",
+            "image": {
+              "src": "/images/projects/quickly/ui/game-v2.png",
+              "alt": "Quickly 2.0 game menu",
+              "caption": "Sneak Peak of Quickly 2.0",
+              "width": 4544,
+              "height": 2476
+            },
+            "width": "bleed"
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "IMPACT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The game launched as part of Sycamore's 5th anniversary campaign and exceeded all expectations within the first 48 hours."
+            ]
+          },
+          {
+            "kind": "metrics",
+            "metrics": [
+              {
+                "value": "2,000+",
+                "label": "Total Plays (2 days)"
+              },
+              {
+                "value": "100+",
+                "label": "New Users Acquired"
+              },
+              {
+                "value": "48 hrs",
+                "label": "Time to Results"
+              }
+            ]
+          }
+        ]
+      },
+      "reflection": {
+        "eyebrow": "REFLECTION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Quickly taught me that the most engaging products are built around a single, well-designed tension loop. Every round had one goal, one feedback moment, and one reason to go again. Simple systems, done right, are powerful. I also learned something valuable about security in game design — we hadn't anticipated competitive users gaming the leaderboard system. It's now a core consideration in the Quickly 2.0 architecture. Designing for trust means designing against abuse, not just designing for delight."
+            ]
+          }
+        ]
+      }
+    },
+    "nextProjectSlug": "spondit-smart-traffic"
+  },
+  {
+    "slug": "spondit-smart-traffic",
+    "title": "SPONDIT — SMART TRAFFIC MANAGEMENT SYSTEM",
+    "summary": "Redesigning a complex, outdated traffic management dashboard into an intuitive command interface for city officials — making real-time congestion control feel approachable, not overwhelming.",
+    "tags": [
+      "WEB APP",
+      "SAAS DESIGN"
+    ],
+    "meta": {
+      "role": "Product Designer",
+      "timeline": "6 Weeks — Q1 2024",
+      "tools": [
+        "Figma",
+        "Notion"
+      ]
+    },
+    "thumbnail": {
+      "src": "/images/projects/spondit/thumb.png",
+      "alt": "Spondit traffic management dashboard",
+      "width": 4528,
+      "height": 2276
+    },
+    "heroDevices": [
+      {
+        "src": "/images/projects/spondit/hero-1.png",
+        "alt": "Spondit monitor devices dashboard"
+      }
+    ],
+    "accentColor": "#C57B57",
+    "order": 5,
+    "sections": {
+      "overview": {
+        "eyebrow": "OVERVIEW",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Spondit is a Smart Traffic Management System web application designed to provide an organised, integrated approach to minimising congestion and improving safety in city streets through connected technology. I was brought in to redesign an existing web application that was outdated and not user-friendly — transforming it into an interface that city officials and traffic organisations could actually use under pressure."
+            ]
+          }
+        ]
+      },
+      "problem": {
+        "eyebrow": "PROBLEM",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The existing system was built for function, not for the humans operating it. The UI was extremely outdated and the experience in general was not intuitive at all. City officials managing live traffic — often under stress, across long shifts — needed a tool that reduced cognitive load, not increased it."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Outdated UI with poor visual hierarchy made critical information hard to scan quickly",
+              "The interface wasn't designed for the high-stakes, time-sensitive nature of traffic management",
+              "Inconsistent interaction patterns slowed operators down at moments that required speed",
+              "No clear priority system for alerts — everything appeared equally urgent"
+            ]
+          },
+          {
+            "kind": "marquee",
+            "pauseOnHover": true,
+            "caption": "Outdated system UI",
+            "images": [
+              {
+                "src": "/images/projects/spondit/ui/scroll-one/old-1.png",
+                "alt": "Outdated Spondit system screen 1",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/scroll-one/old-2.png",
+                "alt": "Outdated Spondit system screen 2",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/scroll-one/old-3.png",
+                "alt": "Outdated Spondit system screen 3",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/scroll-one/old-4.png",
+                "alt": "Outdated Spondit system screen 4",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/scroll-one/old-5.png",
+                "alt": "Outdated Spondit system screen 5",
+                "width": 4272,
+                "height": 2236
+              }
+            ]
+          }
+        ]
+      },
+      "goals": {
+        "eyebrow": "DESIGN GOALS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "This was a redesign of an existing product, so I started by auditing the existing system thoroughly before generating any new ideas. Understanding what the current interface was trying to do was essential before deciding what to change."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Full heuristic evaluation of the existing system — cataloguing usability violations and missed affordances",
+              "Competitive analysis of established traffic management dashboards for reference patterns",
+              "Worked closely with the product team to understand the functional requirements and operator mental models",
+              "Designed for city officials and authorized organizations as the primary users — not general consumers"
+            ]
+          }
+        ]
+      },
+      "process": {
+        "eyebrow": "RESEARCH & PROCESS",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "This was a redesign of an existing product, so I started by auditing the existing system thoroughly before generating any new ideas. Understanding what the current interface was trying to do was essential before deciding what to change."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Full heuristic evaluation of the existing system — cataloguing usability violations and missed affordances",
+              "Competitive analysis of established traffic management dashboards for reference patterns",
+              "Worked closely with the product team to understand the functional requirements and operator mental models",
+              "Designed for city officials and authorized organizations as the primary users — not general consumers"
+            ]
+          }
+        ]
+      },
+      "design": {
+        "eyebrow": "DESIGNS",
+        "blocks": [
+          {
+            "kind": "text",
+            "heading": "Map-first dashboard.",
+            "paragraphs": [
+              "Operators now open the product into a live view of the city — every connected device visible, and every status legible at a glance."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Intersection view.",
+            "paragraphs": [
+              "A spatial visualization of each intersection's lanes, color-coded by flow state. Operators see at a glance which lanes are open and which are blocked, before zooming in to act on it."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Device control surface.",
+            "paragraphs": [
+              "Per-device pages expose what operators actually need: device info, lane-by-lane timers, override modes (manual or automated), day-of-week schedules, location, lane configuration. A device-onboarding flow handles new hardware end-to-end."
+            ]
+          },
+          {
+            "kind": "text",
+            "heading": "Multi-tenant management.",
+            "paragraphs": [
+              "Organizations, users, devices, and roles are managed better. Operators can assign any device to any user or organization with the right permissions; an explicit roles screen maps to the hierarchy (Super Admin, Admin, Manager, City Admin, Technician)."
+            ]
+          },
+          {
+            "kind": "marquee",
+            "pauseOnHover": true,
+            "images": [
+              {
+                "src": "/images/projects/spondit/ui/activate-user.png",
+                "alt": "Activate user",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/activity-log.png",
+                "alt": "Activity log",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/add-organization.png",
+                "alt": "Add organization",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/add-new-device.png",
+                "alt": "Add new device",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/create-new-users.png",
+                "alt": "Create new users",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/dashboard-2-lanes.png",
+                "alt": "Dashboard — 2 lanes",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/dashboard-6-lanes.png",
+                "alt": "Dashboard — 6 lanes",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/dashboard-8.png",
+                "alt": "Dashboard",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/device-info.png",
+                "alt": "Device info",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/edit-profile-info.png",
+                "alt": "Edit profile info",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/lanes.png",
+                "alt": "Lanes",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/organization.png",
+                "alt": "Organization",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/roles-permissions.png",
+                "alt": "Roles & permissions",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/screen-1.png",
+                "alt": "Spondit dashboard screen",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/screen-2.png",
+                "alt": "Spondit dashboard screen",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/screen-3.png",
+                "alt": "Spondit dashboard screen",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/screen-4.png",
+                "alt": "Spondit dashboard screen",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/screen-5.png",
+                "alt": "Spondit dashboard screen",
+                "width": 4272,
+                "height": 2236
+              },
+              {
+                "src": "/images/projects/spondit/ui/sync-devices.png",
+                "alt": "Sync devices",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/time-zone-settings.png",
+                "alt": "Time zone settings",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/user-info-8.png",
+                "alt": "User info",
+                "width": 4272,
+                "height": 2775
+              },
+              {
+                "src": "/images/projects/spondit/ui/user-info.png",
+                "alt": "User info",
+                "width": 4272,
+                "height": 2775
+              }
+            ],
+            "caption": "New and improved system UI"
+          }
+        ]
+      },
+      "impact": {
+        "eyebrow": "IMPACT",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "The redesigned interface improved usability significantly for city officials and positioned Spondit as a credible solution for organisations looking to modernise their traffic management infrastructure."
+            ]
+          },
+          {
+            "kind": "bullets",
+            "items": [
+              "Transformed an outdated, inaccessible system into a clean, operator-focused command interface",
+              "Improved visual hierarchy enabled faster scanning and decision-making",
+              "Interface design increased confidence and adoption among target stakeholders"
+            ]
+          }
+        ]
+      },
+      "reflection": {
+        "eyebrow": "REFLECTION",
+        "blocks": [
+          {
+            "kind": "text",
+            "paragraphs": [
+              "Enterprise and SaaS designs require a different discipline than consumer products. You're not designing for delight — you're designing for trust and efficiency under pressure. This project reinforced that restraint is a design skill: the temptation to add visual interest had to be constantly balanced against the cost of cognitive load. For a user managing city traffic in real time, every unnecessary element on screen is a liability."
+            ]
+          }
+        ]
+      }
+    },
+    "nextProjectSlug": null
+  }
+]

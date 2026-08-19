@@ -1,0 +1,104 @@
+{
+  "intro": "I work with startups and scale-ups to design products that are clear, usable, and intentionally beautiful. Whether you need a 0→1 product design, a design system, or a focused research sprint — I'm your guy.",
+  "services": [
+    {
+      "slug": "mobile-app-design",
+      "title": "Mobile App Design",
+      "description": "End-to-end mobile product design — from 0→1 concept through to polished, dev-ready screens. iOS and Android.",
+      "features": [
+        "User research & journey mapping",
+        "Information architecture",
+        "Wireframes & interactive prototypes",
+        "High-fidelity UI",
+        "Developer handoff with Figma specs"
+      ],
+      "icon": "smartphone",
+      "accentColor": "#073042",
+      "order": 1
+    },
+    {
+      "slug": "website-web-app-design",
+      "title": "Website & Web App Design",
+      "description": "Websites that convert and web apps that users actually understand. Clean, purposeful, and brand-coherent.",
+      "features": [
+        "Conversion-focused landing pages",
+        "Complex web app UX design",
+        "Responsive across all breakpoints",
+        "SEO-friendly page architecture"
+      ],
+      "icon": "globe",
+      "accentColor": "#C57B57",
+      "order": 2
+    },
+    {
+      "slug": "design-systems",
+      "title": "Design Systems",
+      "description": "Scalable component libraries and design systems that align your design and engineering teams under one shared language.",
+      "features": [
+        "Full component audit & consolidation",
+        "Token system (color, type, spacing)",
+        "Figma library with variants & states",
+        "Documentation"
+      ],
+      "icon": "layers",
+      "accentColor": "#2E5E44",
+      "order": 3
+    },
+    {
+      "slug": "ux-research",
+      "title": "UX Research",
+      "description": "Insight-led research that grounds design decisions in real user behavior — not assumptions or internal opinions.",
+      "features": [
+        "User interviews & contextual inquiry",
+        "Usability testing (moderated & unmoderated)",
+        "Competitive & heuristic analysis",
+        "Journey mapping & persona development",
+        "Research synthesis & recommendations"
+      ],
+      "icon": "search",
+      "accentColor": "#331B17",
+      "order": 4
+    },
+    {
+      "slug": "design-audits-consulting",
+      "title": "Design Audits & Consulting",
+      "description": "An outside perspective on your existing product — identifying UX debt, conversion blockers, and quick wins.",
+      "features": [
+        "Heuristic evaluation (full report)",
+        "Conversion funnel analysis",
+        "Prioritized improvement roadmap",
+        "Workshop facilitation"
+      ],
+      "icon": "bar-chart",
+      "accentColor": "#073042",
+      "order": 5
+    }
+  ],
+  "process": [
+    {
+      "number": "01",
+      "title": "Discovery",
+      "description": "We start with a focused kick-off to align on goals, users, constraints, and success metrics."
+    },
+    {
+      "number": "02",
+      "title": "Research",
+      "description": "User research, competitive benchmarking, or a deep audit of your existing product — depending on what's most needed."
+    },
+    {
+      "number": "03",
+      "title": "Design",
+      "description": "Structured exploration through wireframes and prototypes, iterated with feedback."
+    },
+    {
+      "number": "04",
+      "title": "Validate",
+      "description": "Usability testing and stakeholder review before finalizing. Designs are pressure-tested, not guessed."
+    },
+    {
+      "number": "05",
+      "title": "Handoff",
+      "description": "Clean Figma files with documentation, annotations, and a handoff review session with your engineering team."
+    }
+  ]
+}

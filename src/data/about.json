@@ -1,0 +1,99 @@
+{
+  "eyebrow": "THE HUMAN BEHIND THE SCREEN",
+  "title": "ABOUT ME.",
+  "items": [
+    {
+      "kind": "banner",
+      "title": "I AM A BELIEVER OF JESUS CHRIST",
+      "subtitle": "EVERY OTHER THING I AM & DO FLOWS FROM THIS TRUTH!",
+      "quote": "For in Him we live and move and have our being...",
+      "source": "Acts 17:28"
+    },
+    {
+      "kind": "polaroid",
+      "label": "SITCOMS",
+      "image": {
+        "src": "/images/about/sitcoms.svg",
+        "alt": "Favourite sitcom still"
+      },
+      "caption": "I love sitcoms in this order — Friends, The Office, Modern Family, Big Bang Theory, HIMYM & others.",
+      "rotate": -4
+    },
+    {
+      "kind": "profileCard",
+      "name": "VICTORIA AKUDO",
+      "role": "Product & Interaction Designer",
+      "subtitle": "4+ Years of Experience",
+      "image": {
+        "src": "/images/about/victoria-portrait.svg",
+        "alt": "Victoria Akudo portrait"
+      },
+      "footnote": "If found, return to central perk."
+    },
+    {
+      "kind": "polaroid",
+      "label": "BOARDGAMES",
+      "image": {
+        "src": "/images/about/boardgames.svg",
+        "alt": "Scrabble board"
+      },
+      "caption": "I've played boardgames since I was a little girl with my dad and it's still one of my favorite things to do.",
+      "rotate": 5
+    },
+    {
+      "kind": "polaroid",
+      "label": "I LOVE MANGOES",
+      "image": {
+        "src": "/images/about/mangoes.svg",
+        "alt": "Basket of mangoes"
+      },
+      "caption": "I strongly believe that mangoes are one of the few fruits that are serious about being a fruit. It tastes like a fruit. I don't know how else to elaborate that.",
+      "rotate": -3
+    },
+    {
+      "kind": "socialCard",
+      "caption": "Find me on social media ♥",
+      "handles": [
+        {
+          "platform": "Instagram",
+          "handle": "@thevictoriaakudo",
+          "url": "https://www.instagram.com/thevictoriaakudo"
+        },
+        {
+          "platform": "X",
+          "handle": "@victoriaakudo",
+          "url": "https://x.com/victoriaakudo"
+        }
+      ]
+    },
+    {
+      "kind": "polaroid",
+      "label": "BASED IN LAGOS, NIGERIA",
+      "image": {
+        "src": "/images/about/lagos.svg",
+        "alt": "Lagos bridge skyline"
+      },
+      "caption": "I'm based in Lagos, Nigeria and I've worked with numerous clients from around the world.",
+      "rotate": 4
+    },
+    {
+      "kind": "spotify",
+      "label": "MY CURRENT SHUFFLE",
+      "trackTitle": "Let's Dance",
+      "artist": "28 tracks · a playlist by Vickie",
+      "embedUrl": "https://open.spotify.com/embed/playlist/2TrMjG2QmxMlK0sKV53YJ9",
+      "url": "https://open.spotify.com/playlist/2TrMjG2QmxMlK0sKV53YJ9"
+    },
+    {
+      "kind": "substack",
+      "label": "Sometimes I write down my thoughts.",
+      "title": "A Headache & A Beautiful View",
+      "excerpt": "I sat on the hospital bed on the fourth floor, waiting for the doctor to come back with a new cannula...",
+      "url": "https://thevictoriaakudo.substack.com/REPLACE-ME"
+    },
+    {
+      "kind": "note",
+      "text": "Send an Email ♥"
+    }
+  ]
+}

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw design sources (Figma exports, screen recordings) — kept outside the repo.
+# The versions the site actually serves live in /public.
+/src/app/assets
+/assets

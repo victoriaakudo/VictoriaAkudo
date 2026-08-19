@@ -1,0 +1,53 @@
+{
+  "brand": "VICTORIA.AKUDO",
+  "nav": [
+    {
+      "label": "Interaction Design",
+      "href": "/interaction-design"
+    },
+    {
+      "label": "Services",
+      "href": "/services"
+    },
+    {
+      "label": "Resume",
+      "href": "/resume"
+    },
+    {
+      "label": "About Me",
+      "href": "/about"
+    }
+  ],
+  "contact": {
+    "email": "victoriaakudo7@gmail.com",
+    "linkedinUrl": "https://www.linkedin.com/in/REPLACE-ME"
+  },
+  "hero": {
+    "title": "VICTORIA THE DESIGNER.",
+    "roles": [
+      "Product Designer",
+      "UX Researcher",
+      "Interaction Designer"
+    ],
+    "intro": "With **4+ years** of digital product design experience, **Victoria** is an expert at **strategically translating complex problems into intuitive interfaces** across startups and scale-ups in fintech & SaaS with a strong focus on **visual and interaction designs.**",
+    "ctaLabel": "Send Me An Email",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-50108&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978"
+  },
+  "selectedProjectsIntro": "Over the years I’ve been privileged to design for multi-system experiences across different industries. I’ve highlighted a few of them that I’d love you to take a look at.",
+  "testimonialsEyebrow": "KIND WORDS",
+  "testimonialsTitle": "WHAT PEOPLE SAY.",
+  "footer": {
+    "heading": "LET'S WORK TOGETHER.",
+    "ctaPrimary": {
+      "label": "Send Me An Email",
+      "href": "mailto:victoriaakudo7@gmail.com"
+    },
+    "ctaSecondary": {
+      "label": "View Resume",
+      "href": "/resume"
+    },
+    "tagline": "Strategic designer crafting clear, simple solutions for complex digital problems. 5 years of experience in product and interaction design.",
+    "copyright": "© 2026 Victoria Akudo. All rights reserved.",
+    "roleLine": "Product Designer · UX Designer · Interaction Designer"
+  }
+}

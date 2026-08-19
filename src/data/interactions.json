@@ -1,0 +1,247 @@
+[
+  {
+    "slug": "airplane-window-view",
+    "title": "Airplane Window View Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this airplane window view animation in Figma for my 100th day of interaction design challenge — I got the inspiration from Lottie Files' Instagram page. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/airplane.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=283-17327&scaling=min-zoom&content-scaling=fixed&page-id=283%3A14943&starting-point-node-id=283%3A17327",
+    "watchUrl": "https://www.instagram.com/reel/CuITLHngzCk/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/airplane-window.png",
+      "alt": "Airplane window view animation preview"
+    },
+    "accentColor": "#C57B57",
+    "order": 1,
+    "previewWidth": 886,
+    "previewHeight": 820
+  },
+  {
+    "slug": "moving-eye",
+    "title": "Moving Eye Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this moving eye illustration in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Illustration Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/moving-eye.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-50824&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/Ct8eUSAg5UX/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/moving-eye.png",
+      "alt": "Moving eye animation preview"
+    },
+    "accentColor": "#C57B57",
+    "order": 2,
+    "previewWidth": 1280,
+    "previewHeight": 722
+  },
+  {
+    "slug": "interactive-search-button",
+    "title": "Interactive Search Button",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed an interactive search button in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Interaction Design",
+      "Micro-Interaction",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/search-button.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-50837&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/CthTBGGAmqu/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/search-button.png",
+      "alt": "Interactive search button preview"
+    },
+    "accentColor": "#5C3111",
+    "order": 3,
+    "previewWidth": 1280,
+    "previewHeight": 722
+  },
+  {
+    "slug": "rotating-planet",
+    "title": "Rotating Planet Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this rotating planet in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Illustration Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/rotating-planet.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-50844&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/CtCE8cigUbT/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/rotating-planet.png",
+      "alt": "Rotating planet animation preview"
+    },
+    "accentColor": "#331B17",
+    "order": 4,
+    "previewWidth": 1280,
+    "previewHeight": 722
+  },
+  {
+    "slug": "sound-effect",
+    "title": "Sound Effect Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this sound effect animation in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Micro-Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/sound-effect.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51183&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/CsDdvtlgJJ-/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/sound-effect.png",
+      "alt": "Sound effect animation preview"
+    },
+    "accentColor": "#331B17",
+    "order": 5,
+    "previewWidth": 1280,
+    "previewHeight": 720
+  },
+  {
+    "slug": "unique-animated-carousel",
+    "title": "Unique Animated Carousel",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this unique animated carousel in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Web Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/unique-carousel.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51200&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/Cs9YdXSggq2/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/carousel.png",
+      "alt": "Unique animated carousel preview"
+    },
+    "accentColor": "#331B17",
+    "order": 6,
+    "previewWidth": 1230,
+    "previewHeight": 820
+  },
+  {
+    "slug": "menu-bar-micro-interaction",
+    "title": "Menu Bar Micro-Interaction",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this micro-interaction for a menu bar in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Mobile Design",
+      "Micro-Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/menu-bar.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51214&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/Cs4VY7hA9ae/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/menu-bar.png",
+      "alt": "Menu bar micro-interaction preview"
+    },
+    "accentColor": "#F5F8DE",
+    "order": 7,
+    "previewWidth": 1280,
+    "previewHeight": 452
+  },
+  {
+    "slug": "ticking-clock-arm",
+    "title": "Ticking Clock Arm Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this ticking clock arm in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/ticking-clock.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51227&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/CsqGg_iAW1n/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/ticking-clock.png",
+      "alt": "Ticking clock arm animation preview"
+    },
+    "accentColor": "#5C3111",
+    "order": 8,
+    "previewWidth": 1110,
+    "previewHeight": 820
+  },
+  {
+    "slug": "rotating-clock-arm",
+    "title": "Rotating Clock Arm Animation",
+    "category": "MOTION DESIGN",
+    "year": 2023,
+    "description": "I designed and animated this rotating clock arm in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/rotating-clock.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51240&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "watchUrl": "https://www.instagram.com/reel/CsNuHbpgPTU/",
+    "watchLabel": "Watch Design Process",
+    "preview": {
+      "src": "/images/interactions/rotating-clock.png",
+      "alt": "Rotating clock arm animation preview"
+    },
+    "accentColor": "#5C3111",
+    "order": 9,
+    "previewWidth": 1280,
+    "previewHeight": 722
+  },
+  {
+    "slug": "animated-landing-page",
+    "title": "Animated Landing Page",
+    "category": "MOTION DESIGN",
+    "year": 2024,
+    "description": "I designed and animated these floating flags for the Pay4Me landing page in Figma as part of my 100 days of interaction design challenge. Click the watch button to follow my design process.",
+    "tags": [
+      "Motion Design",
+      "Web Design",
+      "Micro-Interaction Design",
+      "Prototype"
+    ],
+    "previewVideo": "/interactive/landing-page.mp4",
+    "prototypeUrl": "https://www.figma.com/proto/JWjXHJaH4Yo4Jatu8SLz5E/My-Portfolio?node-id=909-51248&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=466%3A27978",
+    "fullPrototypeUrl": "https://www.figma.com/proto/Ajfi9nHZTzkJHvc9OfwXCh/Pay4Me?node-id=461-7526&scaling=min-zoom&content-scaling=fixed&page-id=461%3A7525",
+    "watchLabel": "See Full Landing Page Prototype",
+    "preview": {
+      "src": "/images/interactions/pay4me-landing.png",
+      "alt": "Pay4Me animated landing page preview"
+    },
+    "accentColor": "#F5F8DE",
+    "order": 10,
+    "previewWidth": 1280,
+    "previewHeight": 674
+  }
+]
