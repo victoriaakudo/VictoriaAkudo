@@ -2,6 +2,10 @@
   "brand": "VICTORIA.AKUDO",
   "nav": [
     {
+      "label": "AI Projects",
+      "href": "/ai-projects"
+    },
+    {
       "label": "Interaction Design",
       "href": "/interaction-design"
     },

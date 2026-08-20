@@ -9,6 +9,7 @@ import {
   Home,
   MousePointerClick,
   LayoutGrid,
+  Sparkles,
   FileText,
   User,
   type LucideIcon,
@@ -49,6 +50,7 @@ interface NavProps {
 }
 
 const ICONS: Record<string, LucideIcon> = {
+  "/ai-projects": Sparkles,
   "/interaction-design": MousePointerClick,
   "/services": LayoutGrid,
   "/resume": FileText,
