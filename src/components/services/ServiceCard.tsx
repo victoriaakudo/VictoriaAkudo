@@ -7,6 +7,7 @@ import {
   Layers,
   Search,
   BarChart3,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 import { gsap } from "gsap";
@@ -22,6 +23,7 @@ const ICONS: Record<string, LucideIcon> = {
   layers: Layers,
   search: Search,
   "bar-chart": BarChart3,
+  sparkles: Sparkles,
 };
 
 export default function ServiceCard({ service }: { service: Service }) {

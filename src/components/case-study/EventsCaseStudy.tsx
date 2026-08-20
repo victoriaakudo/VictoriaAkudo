@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, ExternalLink, User, Clock, Wrench } from "lucide-react";
 import RichText from "@/components/RichText";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -278,14 +277,14 @@ export default function EventsCaseStudy({
           </div>
 
           <div className="-mx-4 mt-14 overflow-hidden rounded-[20px] md:mx-0 md:rounded-[32px]">
-            <Image
-              data-hero-banner
+            <ZoomableImage
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
               width={1132}
               height={570}
               sizes="(max-width: 1200px) 100vw, 1132px"
               priority
+              heroBanner
               className="h-auto w-full"
             />
           </div>
