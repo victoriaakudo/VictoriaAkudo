@@ -72,6 +72,21 @@
       "icon": "bar-chart",
       "accentColor": "#073042",
       "order": 5
+    },
+    {
+      "slug": "ai-prototyping-ideation",
+      "title": "AI Prototyping & Ideation",
+      "description": "Move from an early product idea to a tangible, testable experience quickly—using AI to explore possibilities without losing strategic design judgment.",
+      "features": [
+        "Rapid concept exploration",
+        "AI-assisted user flows & wireframes",
+        "Functional prototypes for validation",
+        "Prompt and interaction design",
+        "Product direction & feasibility alignment"
+      ],
+      "icon": "sparkles",
+      "accentColor": "#C57B57",
+      "order": 6
     }
   ],
   "process": [

@@ -2,12 +2,12 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, ExternalLink, User, Clock, Wrench } from "lucide-react";
 import RichText from "@/components/RichText";
 import ScrollToTop from "@/components/ScrollToTop";
 import HeroTitle from "@/components/case-study/HeroTitle";
 import ZoomableImage from "@/components/case-study/ZoomableImage";
+import ZoomableVideo from "@/components/case-study/ZoomableVideo";
 import { useCaseStudyMotion } from "@/components/case-study/useCaseStudyMotion";
 import type {
   Project,
@@ -250,14 +250,14 @@ export default function LoanCaseStudy({
           </div>
 
           <div className="-mx-4 mt-14 overflow-hidden rounded-[20px] md:mx-0 md:rounded-[32px]">
-            <Image
-              data-hero-banner
+            <ZoomableImage
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
               width={1132}
               height={570}
               sizes="(max-width: 1200px) 100vw, 1132px"
               priority
+              heroBanner
               className="h-auto w-full"
             />
           </div>
@@ -281,13 +281,13 @@ export default function LoanCaseStudy({
         {demo && (
           <section className="w-full" style={{ backgroundColor: "#F5F8DE" }}>
             <div data-panel className="mx-auto">
-              <video
+              <ZoomableVideo
                 src={demo.src}
+                label={demo.caption ?? `${project.title} walkthrough`}
                 poster={demo.poster}
                 autoPlay={demo.autoplay}
                 loop={demo.loop}
                 muted={demo.muted}
-                playsInline
                 controls={!demo.autoplay}
                 className="h-auto w-full"
               />

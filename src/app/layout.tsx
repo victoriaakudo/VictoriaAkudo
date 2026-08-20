@@ -31,7 +31,7 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   title: "Victoria Akudo — Product & Interaction Designer",
   description:
-    "Portfolio of Victoria Akudo, a product & interaction designer with 4+ years translating complex problems into intuitive interfaces across fintech & SaaS.",
+    "Portfolio of Victoria Akudo, a product & interaction designer with 5 years translating complex problems into intuitive interfaces across fintech & SaaS.",
 };
 
 export default async function RootLayout({

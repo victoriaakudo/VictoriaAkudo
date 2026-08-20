@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, ExternalLink, User, Clock, Wrench } from "lucide-react";
 import RichText from "@/components/RichText";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -261,14 +260,14 @@ export default function SponditCaseStudy({
           </div>
 
           <div className="-mx-4 mt-14 max-w-[1132px] overflow-hidden rounded-[20px] md:mx-auto md:rounded-[32px] border-[2.93px] border-[#F5F8DECC]/25">
-            <Image
-              data-hero-banner
+            <ZoomableImage
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
               width={1132}
               height={570}
               sizes="(max-width: 1200px) 100vw, 1132px"
               priority
+              heroBanner
               className="h-auto w-full"
             />
           </div>

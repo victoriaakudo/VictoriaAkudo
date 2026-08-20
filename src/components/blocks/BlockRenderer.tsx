@@ -1,5 +1,6 @@
-import Image from "next/image";
 import RichText from "@/components/RichText";
+import ZoomableImage from "@/components/case-study/ZoomableImage";
+import ZoomableVideo from "@/components/case-study/ZoomableVideo";
 import type { ContentBlock, ImageRef } from "@/lib/types";
 
 const IMG_WIDTH: Record<"inset" | "full" | "bleed", string> = {
@@ -19,7 +20,7 @@ function blockHeading(text: string) {
 function Figure({ image, className }: { image: ImageRef; className?: string }) {
   return (
     <figure className={className}>
-      <Image
+      <ZoomableImage
         src={image.src}
         alt={image.alt}
         width={image.width ?? 1600}
@@ -87,13 +88,13 @@ export default function BlockRenderer({ block }: { block: ContentBlock }) {
     case "video":
       return (
         <figure className="mx-auto max-w-4xl">
-          <video
+          <ZoomableVideo
             src={block.src}
+            label={block.caption ?? "Case study video"}
             poster={block.poster}
             muted={block.muted}
             loop={block.loop}
             autoPlay={block.autoplay}
-            playsInline
             controls={!block.autoplay}
             className="h-auto w-full rounded-2xl"
           />
@@ -133,7 +134,7 @@ export default function BlockRenderer({ block }: { block: ContentBlock }) {
           }`}
         >
           {block.images.map((img, i) => (
-            <Image
+            <ZoomableImage
               key={i}
               src={img.src}
               alt={img.alt}
@@ -161,7 +162,7 @@ export default function BlockRenderer({ block }: { block: ContentBlock }) {
               >
                 {block.images.map((img, i) => (
                   <li key={i}>
-                    <Image
+                    <ZoomableImage
                       src={img.src}
                       alt={img.alt}
                       width={500}

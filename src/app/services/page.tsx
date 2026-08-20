@@ -7,7 +7,7 @@ import ProcessStrip from "@/components/services/ProcessStrip";
 export const metadata: Metadata = {
   title: "Services — Victoria Akudo",
   description:
-    "Product design services by Victoria Akudo — mobile & web app design, design systems, UX research, and design audits.",
+    "Product design services by Victoria Akudo — mobile & web app design, design systems, UX research, AI prototyping, and design audits.",
 };
 
 export default async function ServicesPage() {

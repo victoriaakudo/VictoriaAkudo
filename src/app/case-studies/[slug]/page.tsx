@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { getProjects, getProject } from "@/lib/data";
 import type { ProjectSections } from "@/lib/types";
 import BlockRenderer from "@/components/blocks/BlockRenderer";
+import ZoomableImage from "@/components/case-study/ZoomableImage";
 import LoanCaseStudy from "@/components/case-study/LoanCaseStudy";
 import DesignSystemCaseStudy from "@/components/case-study/DesignSystemCaseStudy";
 import EventsCaseStudy from "@/components/case-study/EventsCaseStudy";
@@ -134,7 +134,7 @@ export default async function CaseStudyPage({
           className="mt-12 w-full overflow-hidden rounded-[39px] border-[2.93px] border-foreground/10"
           style={{ backgroundColor: project.accentColor ?? "#F5F8DE" }}
         >
-          <Image
+          <ZoomableImage
             src={project.thumbnail.src}
             alt={project.thumbnail.alt}
             width={1132}
@@ -142,6 +142,7 @@ export default async function CaseStudyPage({
             sizes="(max-width: 1152px) 100vw, 1104px"
             className="h-auto w-full"
             priority
+            heroBanner
           />
         </div>
       </header>

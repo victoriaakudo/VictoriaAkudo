@@ -2,12 +2,12 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft, ArrowUpRight, ExternalLink, User, Clock, Wrench } from "lucide-react";
 import RichText from "@/components/RichText";
 import ScrollToTop from "@/components/ScrollToTop";
 import HeroTitle from "@/components/case-study/HeroTitle";
 import ZoomableImage from "@/components/case-study/ZoomableImage";
+import ZoomableVideo from "@/components/case-study/ZoomableVideo";
 import { useCaseStudyMotion } from "@/components/case-study/useCaseStudyMotion";
 import type {
   Project,
@@ -248,14 +248,14 @@ export default function DesignSystemCaseStudy({
           </div>
 
           <div className="-mx-4 mt-14 overflow-hidden rounded-[20px] md:mx-0 md:rounded-[32px]">
-            <Image
-              data-hero-banner
+            <ZoomableImage
               src={project.thumbnail.src}
               alt={project.thumbnail.alt}
               width={1132}
               height={570}
               sizes="(max-width: 1200px) 100vw, 1132px"
               priority
+              heroBanner
               className="h-auto w-full"
             />
           </div>
@@ -328,13 +328,13 @@ export default function DesignSystemCaseStudy({
         {designVideo && (
           <section className="w-full bg-white">
             <figure data-panel>
-              <video
+              <ZoomableVideo
                 src={designVideo.src}
+                label={designVideo.caption ?? `${project.title} walkthrough`}
                 poster={designVideo.poster}
                 autoPlay={designVideo.autoplay}
                 loop={designVideo.loop}
                 muted={designVideo.muted}
-                playsInline
                 controls={!designVideo.autoplay}
                 className="h-auto w-full"
               />

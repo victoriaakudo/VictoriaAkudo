@@ -7,17 +7,15 @@
     "order": 1
   },
   {
-    "quote": "Working with Victoria changed how we think about design at Pay4Me. Every decision was intentional, user-first, and backed by real insight. The redesign exceeded all our KPIs.",
-    "name": "Babatunde Akin-Moses",
-    "title": "CEO & Co-founder, Sycamore",
-    "avatar": { "src": "/images/testimonials/babatunde.png", "alt": "Babatunde Akin-Moses" },
+    "quote": "Victoria’s ability to translate product requirements into practical, user-focused interfaces is exceptional. As a backend engineer, I especially value her product thinking, which often gives me new perspectives on features I thought I had already fully considered.",
+    "name": "Akinboluwarin Akinwande",
+    "title": "Lead Backend Engineer, Sycamore",
     "order": 2
   },
   {
-    "quote": "Victoria is the rare designer who thinks in systems. Her work on our design system saved us months of engineering time and created a shared language across the entire product team.",
-    "name": "Onyinye Okonji",
-    "title": "CEO & Co-founder, Bedrock Residences",
-    "avatar": { "src": "/images/testimonials/onyinye.png", "alt": "Onyinye Okonji" },
+    "quote": "Every project we’ve worked on together, she pushed past the obvious solution to something more considered. She listens closely, iterates fast, and elevates whatever room she’s in. Any team would be lucky to have her.",
+    "name": "Obianuju Afamefuna",
+    "title": "Senior Designer",
     "order": 3
   }
 ]
