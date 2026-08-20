@@ -105,10 +105,10 @@ export default function Footer({ footer, contact, nav, brand }: FooterProps) {
                 <li>
                   <a
                     href={`mailto:${contact.email}`}
-                    className={`inline-flex items-center gap-2 ${linkClass}`}
+                    className={`inline-flex min-w-0 items-start gap-2 ${linkClass}`}
                   >
-                    <Mail className="h-4 w-4" />
-                    {contact.email}
+                    <Mail className="mt-0.5 h-4 w-4 shrink-0" />
+                    <span className="min-w-0 break-all">{contact.email}</span>
                   </a>
                 </li>
                 <li>
